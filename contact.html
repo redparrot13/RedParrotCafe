@@ -5,16 +5,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-      <!-- Bootstrap CSS-->
-      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
-      <!-- additional css after bootstrap css-->
-      <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-      <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap"/>
-      <link rel="stylesheet" href="cafe.css" />
-      <title>Red Parrot Cafe: Contact</title>
+    <!-- additional css after bootstrap css-->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" />
+    <link rel="stylesheet" href="cafe.css" />
+    <title>Red Parrot Cafe: Contact</title>
 </head>
 
 <body>
@@ -22,7 +23,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                    <a class="navbar-brand" href="redparrotcafe.html"><img src="images/redparrot (2).jpg" height="200" /> </a>  
+                    <a class="navbar-brand" href="redparrotcafe.html"><img src="images/redparrot (2).jpg" height="200"
+                            id="parrotpic" /> </a>
                 </div>
                 <div class="col">
                     <h1>RedParrot Cafe</h1>
@@ -42,7 +44,8 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="menu.html"><i class="fa fa-info fa-lg"></i>
                             Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa fa-list fa-lg"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa fa-list fa-lg"></i>
+                            About</a></li>
                     <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-address-card fa-lg"></i>
                             Contact</a></li>
                 </ul>
@@ -51,29 +54,96 @@
     </nav>
 
 
-    
-    <div class="container">
 
-        <h1> contact </h1>
-    </div>
-
-<footer class="site-footer">
     <div class="container">
         <div class="row">
-            <div class="col-4 col-sm-2 offset-1">
-                <h5>Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+            <h1> contact us </h1>
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="col-sm-4">
+                <h5>Our Address</h5>
+                <address>
+                    1 Coffee Shop Lane<br />
+                    Dallas, TX 75000<br />
+                    U.S.A.
+                </address>
+            </div>
+            <div class="col">
+                <a role="button" class="btn tn-link" href="tel:+12065551234"><i class="fa fa-phone"></i>
+                    1-206-555-1234</a><br>
+                <a role="button" class="btn btn-link" href="mailto:inquiries@redparrotcafe.co"><i class="fa fa-envelope-o"></i>
+                    inquiries@redparrotcafe.co </a>
+            </div>
+        </div>
+        <div class="row row-content inquiries">
+            <div class="col">
+                <h2>Inquiries</h2>
+                <hr />
+            </div>
+            <div class="col-md-10">
+                <form>
+                    <div class="form-group row">
+                        <label for="firstName" class="col-2 col-form-label">First Name</label>
+                        <div class="col-4">
+                            <input type="text" class="form-control" id="firstName" name="firstName"
+                                placeholder="First Name" />
+                        </div>
+
+                        <label for="lastName" class="col-2 col-form-label">Last Name</label>
+                        <div class="col-4">
+                            <input type="text" class="form-control" id="lastName" name="lastName"
+                                placeholder="Last Name" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="tel" class="col-md-2 col-form-label">Phone Number</label>
+                        <div class="col-md-10">
+                            <input type="tel" class="form-control" id="tel" name="tel" placeholder="Phone Number" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-md-2 col-form-label">Email</label>
+                        <div class="col-md-10">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="message" class="col-md-2 col-form-label">Message</label>
+                        <div class="col-md-10">
+                            <textarea class="form-control" id="message" name="message"
+                                placeholder="Your Message Here..." rows="8"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-md-2 col-md-10">
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </div>
+                    </div>
+                </form>
+
+
             </div>
         </div>
     </div>
 
-</footer>
-    
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
 
 
 

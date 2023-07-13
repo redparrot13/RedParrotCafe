@@ -96,3 +96,12 @@ a, a:hover {
   color: #333;
 }
 
+#parrotpic {
+    border-radius:50%;
+}
+
+.inquiries{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom:20px
+  }
