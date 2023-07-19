@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin-top: 60px;
     padding:0;
     font-family: "Roboto", sans-serif;
 }
@@ -10,16 +10,35 @@ h3 {
     font-family: "Lato", sans-serif;
 }
 
-
+header {
+    background-image: url("cafe_background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
 
 header h1 {
+    font-size:48px;
+    margin-bottom: 10px;
+}
+header p {
+    font-size:large;
+}
+/* header h1 {
     color: brown;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 40px;
     height: 100px;
-}
+} */
 
 
 
@@ -72,7 +91,13 @@ a:hover {
 }
 
 
+#menu {
 
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
 .menu-section {
     border: 1px solid #ccc;
     padding: 10px;
@@ -109,7 +134,7 @@ a:hover {
 }
 
 
-.navbar-container {
+.navbar  {
     background-color: #00b3b3; 
     padding: 10px;
     color: #fff;
@@ -121,12 +146,12 @@ a:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-  /*.container {
+  #navbarcontainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-  } */
+  } 
 
   
   .navbar-menu {
@@ -162,9 +187,9 @@ a:hover {
   }
   .navbar .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-} 
+}
 
-   @media (max-width: 575.98px) {
+   /*@media (max-width: 575.98px) {
     .navbar-menu {
       display: none;
     }
@@ -190,7 +215,7 @@ a:hover {
       align-items: center;
       padding: 5px;
     }
-  } 
+  }  */
 
 
 
