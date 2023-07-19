@@ -1,8 +1,12 @@
 body {
-    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding:0;
+    font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: "Lato", sans-serif;
 }
 
@@ -20,86 +24,186 @@ header h1 {
 
 
 .site-footer {
-    background-color:#f7ffc8;
-    padding: 20px 0;
-}
-
-.jumbotron {
-    margin:0;
-        padding: 30px;
-        background-image: linear-gradient(to right, red, #bec530, #1537de);
-        color: white;
-}
-
-.row-content{
-    padding: 50px 0;
-    border-bottom:1px ridge;
-    min-height: 200px;
-}
-
-.navbar {
     background-color: #f7ffc8;
     padding: 20px 0;
 }
 
-.navbar .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+.jumbotron {
+    margin: 0;
+    padding: 30px;
+    background-image: linear-gradient(to right, red, #bec530, #1537de);
+    color: white;
 }
-a, a:hover {
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+
+
+
+
+a,
+a:hover {
     color: inherit;
     text-decoration: none;
 }
+.background-image {
+    background-image: url("images\redparrot (1).jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255,255,255, 0.3);
+}
 
 .carousel-caption {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
+
 .carousel {
     border: solid #5637DD;
 }
 
+ 
+
+.section {
+    padding: 50px;
+}
 
 
-  .menu-section {
+
+.menu-section {
     border: 1px solid #ccc;
     padding: 10px;
-    margin-bottom:20px
-  }
+    margin-bottom: 20px
+}
 
-  .menu-header {
+.menu-header {
     font-family: ;
-    font-weight:bold;
+    font-weight: bold;
     font-size: 24px;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
-  .menu-title {
+.menu-title {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 20px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+
+.navbar-container {
+    background-color: #00b3b3; 
+    padding: 10px;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+  /*.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  } */
+
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
   }
 
- .menu-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  margin-bottom: 10px;
-  text-decoration: none;
-  color: #333;
-}
+  .navbar-menu li {
+    flex: 1; 
+    text-align: center; 
+    margin: 0 5px;
+  }
+
+  .navbar-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif; 
+    font-size: 1rem;
+    text-transform: uppercase; 
+    position: relative; 
+  }
+
+  .navbar-menu li a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 2px;
+    background-color: #fff;
+  }
+  .navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+} 
+
+   @media (max-width: 575.98px) {
+    .navbar-menu {
+      display: none;
+    }
+
+    .navbar-menu.show {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 60px; 
+      right: 0;
+      width: 100%;
+      background-color: #00b3b3; 
+    }
+
+    .navbar-menu.show li {
+      margin: 10px 0;
+    }
+
+    .navbar-toggle {
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      padding: 5px;
+    }
+  } 
+
+
 
 #parrotpic {
-    border-radius:50%;
+    border-radius: 50%;
 }
 
-.inquiries{
+.inquiries {
+    width: 50%;
     border: 1px solid #ccc;
     padding: 10px;
-    margin-bottom:20px
-  }
+    margin: 50px auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    
+}
+
