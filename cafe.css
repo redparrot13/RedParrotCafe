@@ -5,6 +5,21 @@ body {
     background-color: #f0f6f6;
 }
 
+#photoGrid {
+  width: 100%;
+  height: auto;
+  display: flex;
+
+  
+}
+
+/* .photo-box {
+    width: 300px; 
+    height: 200px; 
+    border: 2px solid #ccc; 
+    overflow: hidden; 
+  } */
+
 .site-footer {
     padding: 20px 0;
     background-image: linear-gradient(to right, red, #bec530, #1537de);
@@ -44,7 +59,10 @@ header p {
     font-size:large;
 }
 
-
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
 
 
 
