@@ -36,6 +36,7 @@ h3 {
     display: flex;
     justify-content: center;
     text-align: center;
+ 
 }
 
  header {
@@ -114,45 +115,72 @@ a:hover {
 
 
 .section {
-    padding: 50px;
+    padding: 20px;
+    
+}
+.section h2 {
+    text-decoration: underline;
 }
 
 
 
-.menu-section {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 20px
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/coffeebean.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
 }
 
-.menu-header {
-    font-family: 'Shadows Into Light', cursive;
-    font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
+
+.menu-container {  
     justify-content: center;
-}
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    
+  }
+
 
 .menu-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
-    margin-bottom: 20px;
-}
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: underline;
+    justify-content: center;
+  }
+  
+
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 
 .menu-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: 55,55,54;
-}
+    width: 200px;
+    text-align: center;
+    
+  }
+.menu-item h3 {
+    margin: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  .menu-item p {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #666;
+  }
  
 
 .navbar  {
